@@ -154,7 +154,7 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 107,
+    "originalBottomRow": 85,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
         "identifier": "__root_schema__",

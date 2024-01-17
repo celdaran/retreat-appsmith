@@ -1,0 +1,1 @@
+SELECT * FROM view_get_income_scenarios;

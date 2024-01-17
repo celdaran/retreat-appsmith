@@ -11,6 +11,10 @@
     {
       "id": "Scenario",
       "isDefault": false
+    },
+    {
+      "id": "Dashboard",
+      "isDefault": false
     }
   ],
   "viewMode": false,
