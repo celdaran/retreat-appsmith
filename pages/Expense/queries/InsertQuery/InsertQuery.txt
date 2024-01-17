@@ -1,0 +1,24 @@
+INSERT INTO expense (
+	scenario_id,
+	expense_name,
+	expense_descr,
+	amount,
+	inflation_rate,
+	begin_year,
+	begin_month,
+	end_year,
+	end_month,
+	repeat_every
+)
+VALUES (
+	'{{select_Scenario.selectedOptionValue}}',
+	'{{insert_form.formData.expense_name}}',
+	'{{insert_form.formData.expense_descr}}',
+	'{{insert_form.formData.amount}}',
+	'{{insert_form.formData.inflation_rate}}',
+	'{{insert_form.formData.begin_year}}',
+	'{{insert_form.formData.begin_month}}',
+	'{{insert_form.formData.end_year}}',
+	'{{insert_form.formData.end_month}}',
+	'{{insert_form.formData.repeat_every}}'
+);

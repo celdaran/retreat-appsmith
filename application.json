@@ -3,6 +3,14 @@
     {
       "id": "Home",
       "isDefault": true
+    },
+    {
+      "id": "Expense",
+      "isDefault": false
+    },
+    {
+      "id": "Scenario",
+      "isDefault": false
     }
   ],
   "viewMode": false,

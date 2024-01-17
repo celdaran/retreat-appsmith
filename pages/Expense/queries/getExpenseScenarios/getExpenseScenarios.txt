@@ -1,0 +1,10 @@
+SELECT
+  scenario_id as code,
+	CASE WHEN (scenario_descr IS NULL OR scenario_descr = '')
+	  THEN scenario_name
+		ELSE CONCAT(scenario_name, " (", scenario_descr, ")")
+	END as name
+FROM scenario 
+WHERE account_type_id = 1
+ORDER BY scenario_name
+;

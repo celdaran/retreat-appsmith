@@ -1,0 +1,13 @@
+UPDATE expense SET
+		expense_name = '{{update_form.fieldState.expense_name.isVisible ? update_form.formData.expense_name : update_form.sourceData.expense_name}}',
+		scenario_id = '{{update_form.fieldState.scenario_id.isVisible ? update_form.formData.scenario_id : update_form.sourceData.scenario_id}}',
+    expense_descr = '{{update_form.fieldState.expense_descr.isVisible ? update_form.formData.expense_descr : update_form.sourceData.expense_descr}}',
+		amount = '{{update_form.fieldState.amount.isVisible ? update_form.formData.amount : update_form.sourceData.amount}}',
+		inflation_rate = '{{update_form.fieldState.inflation_rate.isVisible ? update_form.formData.inflation_rate : update_form.sourceData.inflation_rate}}',
+		begin_year = '{{update_form.fieldState.begin_year.isVisible ? update_form.formData.begin_year : update_form.sourceData.begin_year}}',
+		begin_month = '{{update_form.fieldState.begin_month.isVisible ? update_form.formData.begin_month : update_form.sourceData.begin_month}}',
+		end_year = '{{update_form.fieldState.end_year.isVisible ? update_form.formData.end_year : update_form.sourceData.end_year}}',
+		end_month = '{{update_form.fieldState.end_month.isVisible ? update_form.formData.end_month : update_form.sourceData.end_month}}',
+		repeat_every = '{{update_form.fieldState.repeat_every.isVisible ? update_form.formData.repeat_every : update_form.sourceData.repeat_every}}',
+		created_at = '{{update_form.fieldState.created_at.isVisible ? update_form.formData.created_at : update_form.sourceData.created_at}}'
+  WHERE expense_id = {{data_table.selectedRow.expense_id}};

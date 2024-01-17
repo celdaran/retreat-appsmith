@@ -1,0 +1,2 @@
+DELETE FROM expense
+  WHERE expense_id = {{data_table.triggeredRow.expense_id}};
