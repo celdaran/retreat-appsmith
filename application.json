@@ -5,15 +5,11 @@
       "isDefault": true
     },
     {
-      "id": "Expenses",
-      "isDefault": false
-    },
-    {
-      "id": "Scenario",
-      "isDefault": false
-    },
-    {
       "id": "Dashboard",
+      "isDefault": false
+    },
+    {
+      "id": "Expenses",
       "isDefault": false
     },
     {
@@ -22,6 +18,10 @@
     },
     {
       "id": "Income",
+      "isDefault": false
+    },
+    {
+      "id": "Scenario",
       "isDefault": false
     }
   ],
