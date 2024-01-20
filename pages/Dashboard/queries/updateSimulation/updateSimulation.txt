@@ -1,0 +1,10 @@
+UPDATE simulation SET
+	scenario_id__expense = {{select_Expense.selectedOptionValue}},
+	scenario_id__asset = {{select_Asset.selectedOptionValue}},
+	scenario_id__income = {{select_Income.selectedOptionValue}},
+	tax_rate = {{input_IncomeTaxRate.text}},
+	periods = {{input_Periods.text}},
+	start_year = {{input_StartYear.text}},
+	start_month = {{input_StartMonth.text}}
+WHERE simulation_id = {{select_Simulation.selectedOptionValue}}
+;

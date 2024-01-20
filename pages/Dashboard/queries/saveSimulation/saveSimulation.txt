@@ -1,0 +1,21 @@
+INSERT INTO simulation (
+	simulation_name,
+	simulation_descr,
+	scenario_id__expense,
+	scenario_id__asset,
+	scenario_id__income,
+	tax_rate,
+	periods,
+	start_year,
+	start_month
+) VALUES (
+		{{form_NewSimulation.data.input_NewSimulationName}},
+		{{form_NewSimulation.data.input_NewSimulationDescr}},
+		{{select_Expense.selectedOptionValue}},
+	  {{select_Asset.selectedOptionValue}},
+		{{select_Income.selectedOptionValue}},
+	  {{input_IncomeTaxRate.text}},
+	  {{input_Periods.text}},
+	  {{input_StartYear.text}},
+	  {{input_StartMonth.text}}
+);

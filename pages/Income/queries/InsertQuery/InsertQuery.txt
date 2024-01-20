@@ -1,0 +1,22 @@
+INSERT INTO income (
+	scenario_id,
+	income_name,
+	income_descr,
+	amount,
+	inflation_rate,
+	begin_year,
+	begin_month,
+	end_year,
+	end_month
+)
+VALUES (
+	'{{select_Scenario.selectedOptionValue}}',
+	'{{insert_form.formData.income_name}}',
+	'{{insert_form.formData.income_descr}}',
+	'{{insert_form.formData.amount}}',
+	'{{insert_form.formData.inflation_rate}}',
+	'{{insert_form.formData.begin_year}}',
+	'{{insert_form.formData.begin_month}}',
+	'{{insert_form.formData.end_year}}',
+	'{{insert_form.formData.end_month}}'
+);

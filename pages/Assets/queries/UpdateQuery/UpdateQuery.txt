@@ -1,0 +1,10 @@
+UPDATE asset SET
+  asset_name = '{{update_form.fieldState.asset_name.isVisible ? update_form.formData.asset_name : update_form.sourceData.asset_name}}',
+  asset_descr = '{{update_form.fieldState.asset_descr.isVisible ? update_form.formData.asset_descr : update_form.sourceData.asset_descr}}',
+  opening_balance = '{{update_form.fieldState.opening_balance.isVisible ? update_form.formData.opening_balance : update_form.sourceData.opening_balance}}',
+  max_withdrawal = '{{update_form.fieldState.max_withdrawal.isVisible ? update_form.formData.max_withdrawal : update_form.sourceData.max_withdrawal}}',
+  apr = '{{update_form.fieldState.apr.isVisible ? update_form.formData.apr : update_form.sourceData.apr}}',
+  begin_after = '{{update_form.fieldState.begin_after.isVisible ? update_form.formData.begin_after : update_form.sourceData.begin_after}}',
+  begin_year = '{{update_form.fieldState.begin_year.isVisible ? update_form.formData.begin_year : update_form.sourceData.begin_year}}',
+  begin_month = '{{update_form.fieldState.begin_month.isVisible ? update_form.formData.begin_month : update_form.sourceData.begin_month}}'
+WHERE asset_id = {{data_table.selectedRow.asset_id}};

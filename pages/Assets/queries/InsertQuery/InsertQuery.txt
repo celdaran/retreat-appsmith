@@ -1,0 +1,22 @@
+INSERT INTO asset (
+	scenario_id,
+	asset_name,
+	asset_descr,
+	opening_balance,
+	max_withdrawal,
+	apr,
+	begin_after,
+	begin_year,
+	begin_month
+)
+VALUES (
+	'{{select_Scenario.selectedOptionValue}}',
+	'{{insert_form.formData.asset_name}}',
+	'{{insert_form.formData.asset_descr}}',
+	'{{insert_form.formData.opening_balance}}',
+	'{{insert_form.formData.max_withdrawal}}',
+	'{{insert_form.formData.apr}}',
+	'{{insert_form.formData.begin_after}}',
+	'{{insert_form.formData.begin_year}}',
+	'{{insert_form.formData.begin_month}}'
+);

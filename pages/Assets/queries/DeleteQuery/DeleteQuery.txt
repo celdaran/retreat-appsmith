@@ -1,0 +1,2 @@
+DELETE FROM asset
+  WHERE asset_id = {{data_table.triggeredRow.asset_id}};

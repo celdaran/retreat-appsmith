@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT code AS value, name AS label FROM view_get_asset_scenarios;",
+      "body": "SELECT * FROM view_get_asset_scenarios;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

@@ -1,0 +1,10 @@
+UPDATE income SET
+	income_name = '{{update_form.fieldState.income_name.isVisible ? update_form.formData.income_name : update_form.sourceData.income_name}}',
+	income_descr = '{{update_form.fieldState.income_descr.isVisible ? update_form.formData.income_descr : update_form.sourceData.income_descr}}',
+	amount = '{{update_form.fieldState.amount.isVisible ? update_form.formData.amount : update_form.sourceData.amount}}',
+	inflation_rate = '{{update_form.fieldState.inflation_rate.isVisible ? update_form.formData.inflation_rate : update_form.sourceData.inflation_rate}}',
+	begin_year = '{{update_form.fieldState.begin_year.isVisible ? update_form.formData.begin_year : update_form.sourceData.begin_year}}',
+	begin_month = '{{update_form.fieldState.begin_month.isVisible ? update_form.formData.begin_month : update_form.sourceData.begin_month}}',
+	end_year = '{{update_form.fieldState.end_year.isVisible ? update_form.formData.end_year : update_form.sourceData.end_year}}',
+	end_month = '{{update_form.fieldState.end_month.isVisible ? update_form.formData.end_month : update_form.sourceData.end_month}}'
+WHERE income_id = {{data_table.selectedRow.income_id}};

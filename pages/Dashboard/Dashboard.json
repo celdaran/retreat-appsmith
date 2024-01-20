@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 940,
+          "bottomRow": 900,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -28,6 +28,16 @@
           "leftColumn": 0
         },
         "layoutOnLoadActions": [
+          [
+            {
+              "id": "Dashboard_getSimulations",
+              "name": "getSimulations",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
           [
             {
               "id": "Dashboard_getAssetScenarios",
@@ -56,18 +66,32 @@
           ],
           [
             {
+              "id": "Dashboard_Utils.saveSimulations",
+              "name": "Utils.saveSimulations",
+              "collectionId": "Dashboard_Utils",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "function () {\n  getSimulations.run();\n  return storeValue('simulations', getSimulations.data);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Dashboard_runSimulation",
               "name": "runSimulation",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "select_Asset.selectedOptionLabel",
+                "select_Expense.selectedOptionLabel || 1",
                 "input_Periods.text",
                 "input_StartMonth.text",
-                "select_Income.selectedOptionLabel",
-                "select_Expense.selectedOptionLabel",
                 "input_IncomeTaxRate.text",
-                "input_StartYear.text"
+                "input_StartYear.text",
+                "select_Asset.selectedOptionLabel || 1",
+                "select_Income.selectedOptionLabel || 1"
               ],
               "timeoutInMillisecond": 10000
             }

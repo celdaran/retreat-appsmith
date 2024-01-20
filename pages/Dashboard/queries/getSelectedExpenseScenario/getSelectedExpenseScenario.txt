@@ -1,0 +1,5 @@
+SELECT e.*
+FROM view_get_expense_scenarios e
+JOIN simulation s ON s.scenario_id__expense = e.scenario_id
+WHERE s.simulation_id = {{select_Simulation.selectedOptionValue}}
+;

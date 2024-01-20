@@ -2,7 +2,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 32,
     "widgetName": "button_Income",
-    "onClick": "{{navigateTo('Expense', {}, 'SAME_WINDOW');}}",
+    "onClick": "{{navigateTo('Income', {}, 'SAME_WINDOW');}}",
     "buttonColor": "#1d4869",
     "dynamicPropertyPathList": [],
     "displayName": "Icon button",
@@ -11,9 +11,9 @@
         "click",
         "submit"
     ],
-    "topRow": 21,
-    "bottomRow": 26,
-    "tooltip": "Manage Expense Scenarios",
+    "topRow": 26,
+    "bottomRow": 31,
+    "tooltip": "Manage Income Scenarios",
     "parentRowSpace": 10,
     "type": "ICON_BUTTON_WIDGET",
     "hideCard": false,
@@ -38,9 +38,9 @@
     "isLoading": false,
     "mobileTopRow": 28,
     "responsiveBehavior": "hug",
-    "originalTopRow": 21,
+    "originalTopRow": 26,
     "borderRadius": "0.375rem",
     "mobileLeftColumn": 41,
-    "originalBottomRow": 26,
+    "originalBottomRow": 31,
     "buttonVariant": "TERTIARY"
 }

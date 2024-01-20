@@ -1,0 +1,5 @@
+{
+	"newScenarioName": "{{clone_form.data.input_NewScenarioName}}",
+	"newScenarioDescr": "{{clone_form.data.input_NewScenarioDescr}}",
+	"oldScenarioId": {{clone_form.data.input_OldScenarioId}}
+}
