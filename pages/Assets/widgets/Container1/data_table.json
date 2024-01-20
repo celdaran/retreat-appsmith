@@ -37,7 +37,8 @@
         {"key": "primaryColumns.opening_balance.computedValue"},
         {"key": "primaryColumns.max_withdrawal.computedValue"},
         {"key": "primaryColumns.apr.computedValue"},
-        {"key": "primaryColumns.begin_after.selectOptions"}
+        {"key": "primaryColumns.begin_after.selectOptions"},
+        {"key": "primaryColumns.begin_after.computedValue"}
     ],
     "leftColumn": 1,
     "delimiter": ",",
@@ -69,7 +70,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1705770274167,
+    "columnUpdatedAt": 1705771669835,
     "primaryColumnId": "expense_id",
     "columnSizeMap": {
         "task": 245,
@@ -79,7 +80,6 @@
     "widgetName": "data_table",
     "defaultPageSize": 0,
     "columnOrder": [
-        "scenario_id",
         "asset_name",
         "asset_descr",
         "opening_balance",
@@ -93,6 +93,7 @@
         "scenario_name",
         "scenario_descr",
         "asset_id",
+        "scenario_id",
         "max_withdrawal"
     ],
     "dynamicPropertyPathList": [
@@ -558,7 +559,7 @@
             "verticalAlignment": "CENTER"
         },
         "begin_after": {
-            "computedValue": "",
+            "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( SelectQuery.data.map( (obj) =>{ return  {'label': obj.asset_name, 'value': obj.asset_id } })))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "begin_after",
@@ -579,7 +580,7 @@
             "label": "Begin After",
             "fontStyle": "",
             "textColor": "",
-            "columnType": "text",
+            "columnType": "select",
             "thousandSeparator": true,
             "horizontalAlignment": "LEFT",
             "isCellEditable": false,

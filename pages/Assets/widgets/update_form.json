@@ -62,7 +62,8 @@
         {"key": "isVisible"},
         {"key": "schema.__root_schema__.children.begin_after.defaultValue"},
         {"key": "schema.__root_schema__.children.begin_after.borderRadius"},
-        {"key": "schema.__root_schema__.children.begin_after.accentColor"}
+        {"key": "schema.__root_schema__.children.begin_after.accentColor"},
+        {"key": "schema.__root_schema__.children.begin_after.options"}
     ],
     "showReset": false,
     "dynamicHeight": "FIXED",
@@ -345,7 +346,7 @@
                 "iconAlign": "left",
                 "position": 8,
                 "isDisabled": false,
-                "sourceData": 2,
+                "sourceData": 3,
                 "fieldType": "Number Input"
             },
             "scenario_id": {
@@ -411,7 +412,7 @@
                 "iconAlign": "left",
                 "position": 2,
                 "isDisabled": false,
-                "sourceData": 250000,
+                "sourceData": 150000,
                 "fieldType": "Number Input"
             },
             "modified_at": {
@@ -441,6 +442,7 @@
                 "identifier": "begin_after",
                 "boxShadow": "none",
                 "isRequired": false,
+                "isFilterable": false,
                 "isCustomField": false,
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.begin_after))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -448,14 +450,14 @@
                 "accessor": "begin_after",
                 "isVisible": true,
                 "label": "Begin After",
+                "serverSideFiltering": false,
                 "originalIdentifier": "begin_after",
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 14,
+                "options": "{{SelectQuery.data.map( (obj) =>{ return  {'label': obj.asset_name, 'value': obj.asset_id } })}}",
+                "position": 5,
                 "isDisabled": false,
-                "fieldType": "Text Input"
+                "fieldType": "Select"
             },
             "begin_year": {
                 "labelTextSize": "0.875rem",
