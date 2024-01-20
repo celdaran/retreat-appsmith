@@ -320,28 +320,6 @@
                 "isDisabled": false,
                 "sourceData": "",
                 "fieldType": "Text Input"
-            },
-            "Max_Withdrawal": {
-                "labelTextSize": "0.875rem",
-                "identifier": "Max_Withdrawal",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Max Withdrawal\"]))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-                "dataType": "string",
-                "accessor": "Max Withdrawal",
-                "isVisible": true,
-                "label": "Max Withdrawal",
-                "originalIdentifier": "Max Withdrawal",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 3,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
             }
         },
         "position": -1,
