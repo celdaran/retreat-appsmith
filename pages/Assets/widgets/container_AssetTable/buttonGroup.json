@@ -29,7 +29,6 @@
             "placement": "CENTER"
         },
         "groupButton3": {
-            "onClick": "{{SelectQuery.run()}}",
             "buttonType": "SIMPLE",
             "iconName": "refresh",
             "buttonColor": "#2e3d49",
@@ -98,8 +97,7 @@
     "parentColumnSpace": 11.446533203125,
     "dynamicTriggerPathList": [
         {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButton5zffrdr5xl.onClick"},
-        {"key": "groupButtons.groupButton3.onClick"}
+        {"key": "groupButtons.groupButton5zffrdr5xl.onClick"}
     ],
     "leftColumn": 27,
     "dynamicBindingPathList": [{"key": "borderRadius"}],

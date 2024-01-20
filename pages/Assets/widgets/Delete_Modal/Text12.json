@@ -12,7 +12,7 @@
     "fontFamily": "System Default",
     "leftColumn": 1,
     "dynamicBindingPathList": [{"key": "text"}],
-    "text": "Are you sure you want to delete Expense \"{{data_table.selectedRow.expense_name}}\"",
+    "text": "Are you sure you want to delete Asset \"{{data_table.selectedRow.expense_name}}\"",
     "labelTextSize": "0.875rem",
     "rightColumn": 63,
     "textAlign": "LEFT",

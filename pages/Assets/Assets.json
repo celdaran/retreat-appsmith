@@ -34,7 +34,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "select_Scenario.selectedOptionValue || 1",
+                "select_Scenario.selectedOptionValue || 2",
                 "data_table.sortOrder.order || \"ASC\"",
                 "data_table.pageSize",
                 "data_table.sortOrder.column || 'asset_name'",
@@ -65,5 +65,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "65a5672fa536dd4c39013935_65abea114ffa034b7c30138e"
+  "gitSyncId": "65a5672fa536dd4c39013935_65ac11d7344e1d5915010839"
 }
