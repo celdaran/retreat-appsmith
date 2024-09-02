@@ -1,61 +1,77 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "Select Scenario",
-    "topRow": 4,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "{ \"label\": \"Default\", \"value\": 1}",
-    "animateLoading": true,
-    "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"}
-    ],
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileBottomRow": 11,
-    "widgetName": "select_Scenario",
-    "isFilterable": false,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 10,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 21,
-    "parentColumnSpace": 11.446533203125,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Top",
-    "sourceData": "{{getExpenseScenarios.data.map( (obj) =>{ return  {'label': obj.scenario_descr, 'value': obj.scenario_id } })}}",
-    "key": "3vcfwq3rpb",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 51,
-    "widgetId": "fik4cqk8gp",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "59rw5mx0bq",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 4,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "mobileLeftColumn": 1,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{SelectQuery.run()}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "defaultOptionValue": "{ \"label\": \"Default\", \"value\": 1}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "3vcfwq3rpb",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Select Scenario",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 4,
+  "onOptionChange": "{{SelectQuery.run()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 11.446533203125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 51,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{getExpenseScenarios.data.map( (obj) =>{ return  {'label': obj.scenario_descr, 'value': obj.scenario_id } })}}",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 4,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "fik4cqk8gp",
+  "widgetName": "select_Scenario"
 }

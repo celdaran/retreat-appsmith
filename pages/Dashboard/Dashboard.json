@@ -1,114 +1,34 @@
 {
+  "gitSyncId": "65a5672fa536dd4c39013935_65a75f8588b37e601f7c578a",
   "unpublishedPage": {
-    "name": "Dashboard",
-    "slug": "dashboard",
     "customSlug": "home",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
+          "bottomRow": 900,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
+          "minHeight": 1292,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
           "rightColumn": 4896,
           "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
-          "bottomRow": 900,
-          "containerStyle": "none",
           "snapRows": 124,
-          "parentRowSpace": 1,
+          "topRow": 0,
           "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "version": 87,
-          "minHeight": 1292,
-          "dynamicTriggerPathList": [],
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Dashboard_getSimulations",
-              "name": "getSimulations",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Dashboard_getAssetScenarios",
-              "name": "getAssetScenarios",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Dashboard_getExpenseScenarios",
-              "name": "getExpenseScenarios",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Dashboard_getIncomeScenarios",
-              "name": "getIncomeScenarios",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Dashboard_Utils.saveSimulations",
-              "name": "Utils.saveSimulations",
-              "collectionId": "Dashboard_Utils",
-              "clientSideExecution": true,
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "function () {\n  getSimulations.run();\n  return storeValue('simulations', getSimulations.data);\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Dashboard_runSimulation",
-              "name": "runSimulation",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "select_Expense.selectedOptionLabel || 1",
-                "input_Periods.text",
-                "input_StartMonth.text",
-                "input_IncomeTaxRate.text",
-                "input_StartYear.text",
-                "select_Asset.selectedOptionLabel || 1",
-                "select_Income.selectedOptionLabel || 1"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Dashboard",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "65a5672fa536dd4c39013935_65a75f8588b37e601f7c578a"
+    "name": "Dashboard",
+    "slug": "dashboard"
+  }
 }
